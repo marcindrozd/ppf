@@ -1,0 +1,224 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-right li:hover {
+  background: #ddd;
+}
+
+#title {
+  background: url('http://i61.tinypic.com/bg1v7k.jpg') no-repeat center center fixed;
+  padding: 80px 0;
+  text-align: center;
+  height: 600px;
+}
+
+#title h1 {
+  text-shadow: 1px 0px 1px rgba(28,28,28,1);
+  color: #fff;
+  font-size: 3em;
+  line-height: 1;
+  margin-top: 100px;
+}
+
+@media(max-width: 768px) {   
+  #title h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+  }
+  
+  #title h2 {
+    font-size: 1.5em;
+  }
+  
+  #title ul > li {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+#about {
+  background: url('http://i62.tinypic.com/e04ab7.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 120px 0;
+  color: #eee;
+}
+
+#about #about-txt {
+  padding-left: 0;
+}
+
+#about article {
+  font-size: 1.2em;
+}
+
+#about #about-img {
+  text-align: center;
+}
+
+#my-photo {
+  height: 200px;
+  border-radius: 50%
+}
+
+@media(max-width: 768px) {  
+  #my-photo {
+    display: none;
+  }
+}
+
+#portfolio {
+  background-color: #999;
+  padding: 40px 20px;
+}
+
+#portfolio .portfolio-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#portfolio .portfolio-item {
+  padding: 10px;
+}
+
+#portfolio .portfolio-item:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#portfolio .portfolio-desc {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 2px;
+}
+
+#portfolio .portfolio-desc p {
+  font-style: italic;
+}
+
+#portfolio .portfolio-img {
+  width: 100%;
+  z-index: 1;
+}
+
+#portfolio .overlay-img {
+  position: relative;
+}
+
+#portfolio .overlay-img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  transition: 0.3s;
+  top: 0;
+}
+
+#contact {
+  background: url('http://i57.tinypic.com/zu116q.jpg') no-repeat center center fixed;
+  padding: 80px 20px;
+}
+
+#contact .contact-me {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#contact .btm-social-links {
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+#contact .btm-social-links li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer .nav {
+  display: inline-block;
+}
+
+footer .nav li {
+  display: inline-block;
+}
+
+footer .nav li:hover {
+  background: none;  
+}
+
+footer .nav li a {
+  font-weight: bold;
+}
+
+footer .nav li a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+footer p {
+  display: block;
+  font-weight: bold;
+  color: #999;
+  clear: both;
+  padding-left: 14px
+}
+
+@media(max-width: 768px) {
+  footer p {
+    padding-left: 0;
+    font-size: 0.7em;
+  }
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  background: #666;
+  color: #ddd;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.portfolio-item a {
+  background: black;
+  display: inline-block;
+}
+
+.portfolio-item img {
+  transition: all ease 0.5s;
+}
+
+.portfolio-item a:hover img {
+  opacity: 0.6;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item .hover-icon {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 40px;
+  display: none;
+}
+
+.portfolio-item:hover > .hover-icon {
+  color: white;
+  display: block;
+}
